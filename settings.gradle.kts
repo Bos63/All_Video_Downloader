@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Photo Editor"
+rootProject.name = "DarkFetch"
 include(":app")
