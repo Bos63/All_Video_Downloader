@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.example.myphotoeditor.CustomEditorView
+        android:id="@+id/editorView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#141414" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="6dp">
+
+        <Button
+            android:id="@+id/btnAddText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Metin Ekle" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Uygula & Kaydet" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="80"
+        android:progress="28" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View android:id="@+id/color1" android:layout_width="28dp" android:layout_height="28dp" android:background="#FFFFFF" android:layout_margin="4dp"/>
+            <View android:id="@+id/color2" android:layout_width="28dp" android:layout_height="28dp" android:background="#FFEB3B" android:layout_margin="4dp"/>
+            <View android:id="@+id/color3" android:layout_width="28dp" android:layout_height="28dp" android:background="#F44336" android:layout_margin="4dp"/>
+            <View android:id="@+id/color4" android:layout_width="28dp" android:layout_height="28dp" android:background="#4CAF50" android:layout_margin="4dp"/>
+            <View android:id="@+id/color5" android:layout_width="28dp" android:layout_height="28dp" android:background="#03A9F4" android:layout_margin="4dp"/>
+            <View android:id="@+id/color6" android:layout_width="28dp" android:layout_height="28dp" android:background="#9C27B0" android:layout_margin="4dp"/>
+            <View android:id="@+id/color7" android:layout_width="28dp" android:layout_height="28dp" android:background="#FF9800" android:layout_margin="4dp"/>
+            <View android:id="@+id/color8" android:layout_width="28dp" android:layout_height="28dp" android:background="#000000" android:layout_margin="4dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şablonlar"
+        android:textStyle="bold"
+        android:paddingTop="4dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTemplates"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sticker / Logo"
+        android:textStyle="bold"
+        android:paddingTop="4dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStickers"
+        android:layout_width="match_parent"
+        android:layout_height="140dp" />
+
+    <TextView
+        android:id="@+id/tvEditorStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İpucu: Sticker sürükle, pinch ile ölçekle, iki parmakla döndür."
+        android:paddingTop="4dp" />
+
+</LinearLayout>
