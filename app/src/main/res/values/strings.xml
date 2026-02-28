@@ -1,14 +1,3 @@
 <resources>
-    <string name="app_name">All Video Downloader</string>
-    <string name="all">All Video Downloader</string>
-    <string name="aash">Created by Aash Yadav</string>
-    <string name="fb">Facebook</string>
-    <string name="inst">Instagram</string>
-    <string name="yt">YouTube</string>
-    <string name="fb_reels">FB Reels</string>
-    <string name="Sett">Setting</string>
-    <string name="abt">About Us</string>
-    <string name="one">One Solution to all the Problems</string>
-
-
+    <string name="app_name">DarkFetch</string>
 </resources>
